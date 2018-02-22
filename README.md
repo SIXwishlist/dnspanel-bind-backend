@@ -6,7 +6,9 @@ It uses dig, host & /usr/sbin/named-checkzone commands for domain configuration 
 <br>
 /html/srv/ part is responsible for database (MySQL/MariaDB) operations and verify domains configurations and must be placed at the same domain/virtualhost of web server as front-end files.<br>
 <br>
-/root/skrypty/ part manipulate BIND configuration files and should run as privileged user by CRON daemon.<br><br>
+/root/skrypty/dns/ part manipulate BIND configuration files and should run as privileged user by CRON daemon.<br><br>
 Example:<br><br>
 */5 * * * *     root    php -f /root/skrypty/cron-dns-reload.php &> /dev/null<br><br>
 will generate named.conf and zones configuration files and reload dns server. Also there are at the bottom few commands for copy dns configuration files to other directories for export to other servers. You can delete/modify these lines to fit your needs.
+<br><br>
+/root/skrypty/dns/import-domains.php is a tool for import existing configuration from files at /etc/bind to the database. You can run it manually from command line.
