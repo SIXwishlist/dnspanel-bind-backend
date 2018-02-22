@@ -4,7 +4,7 @@
 This is Linux back-end example written in PHP for web based panel: https://github.com/mrfx/dnspanel-bind-frontend<br>
 It uses dig, host & /usr/sbin/named-checkzone commands for domain configuration checks and trace.<br>
 <br>
-/html/srv/ part is responsible for database (MyQSL/MariaDB) operations only and verify domains configurations and must be placed at the same domain/virtualhost of web server as front-end files.<br>
+/html/srv/ part is responsible for database (MySQL/MariaDB) operations and verify domains configurations and must be placed at the same domain/virtualhost of web server as front-end files.<br>
 <br>
 /root/skrypty/ part manipulate BIND configuration files and should run as privileged user by CRON daemon.<br><br>
 Example:<br><br>
