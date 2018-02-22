@@ -9,6 +9,6 @@ It uses dig, host & /usr/sbin/named-checkzone commands for domain configuration 
 /root/skrypty/dns/ part manipulate BIND configuration files and should run as privileged user by CRON daemon.<br><br>
 Example:<br><br>
 */5 * * * *     root    php -f /root/skrypty/cron-dns-reload.php &> /dev/null<br><br>
-will generate named.conf and zones configuration files and reload dns server. Also there are at the bottom of /root/skrypty/dns/create-bind-files-from-db.php few commands for copy dns configuration files to other directories for export to other dns servers. You can delete/modify these lines to fit your needs.
+will generate named.conf and zones configuration files and reload dns server. Also there are at the bottom of /root/skrypty/dns/create-bind-files-from-db.php few commands for copy dns configuration files to other directories for export to other dns servers. You should delete/modify these lines to fit your needs.
 <br><br>
 /root/skrypty/dns/import-domains.php is a tool for import your old  DNS configuration from files at /etc/bind/ to the database. You can run it manually from command line.
