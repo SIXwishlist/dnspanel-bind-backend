@@ -11,4 +11,4 @@ Example:<br><br>
 */5 * * * *     root    php -f /root/skrypty/cron-dns-reload.php &> /dev/null<br><br>
 will generate named.conf and zones configuration files and reload dns server. Also there are at the bottom few commands for copy dns configuration files to other directories for export to other servers. You can delete/modify these lines to fit your needs.
 <br><br>
-/root/skrypty/dns/import-domains.php is a tool for import existing configuration from files at /etc/bind to the database. You can run it manually from command line.
+/root/skrypty/dns/import-domains.php is a tool for import your DNS old configuration from files at /etc/bind/ to the database. You can run it manually from command line.
